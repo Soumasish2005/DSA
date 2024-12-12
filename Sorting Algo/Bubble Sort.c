@@ -1,16 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int bubbleSort(int arr[], int n);
+int bubbleSort(int arr[], int n, int v_flag);
 void printArr(int arr[], int n);
 
 int main(){
-    int arr[5] = { 4,1,3,2,5 };
-    bubbleSort(arr,5);
+    int arr[5] = { 5,1,3,2,4 };
+    bubbleSort(arr,5,1);
+    printf("\nSorted arr: \n");
     printArr(arr,5);
 }
 
-int bubbleSort(int arr[], int n){
+int bubbleSort(int arr[], int n, int v_flag){
     int i,j;
     for(i=0; i < n; i++){
         int swapped = 0;
@@ -24,6 +25,10 @@ int bubbleSort(int arr[], int n){
         }
         if( swapped == 0){
             break;
+        }
+        if( v_flag == 1){
+            printf("\nIteration %d: ",i);
+            printArr(arr,n);
         }
     }
 }
