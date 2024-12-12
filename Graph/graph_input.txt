@@ -1,0 +1,13 @@
+** Graph with 5 nodes **
+***
+    2 --- 4
+  / |     |
+ 1  |     |
+  \ |     |
+    3 --- 5
+***
+
+Input: 5 1 1 1 0 1 0 0 0 1 1 
+
+** Graph with 7 nodes **
+
