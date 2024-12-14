@@ -145,15 +145,27 @@ int deleteAt(node** head, int position){
     for(i=0; i<position-1; i++){
         temp = temp->link;
     }
-    temp->link = temp->link->link;
     int data = (temp->link)->data;
+    temp->link = temp->link->link;
     free(temp->link);
     return data;
 }
 
 void reverseList(node** head){
-    //hhh
+    node* prev = NULL;
+    node* current = *head;
+    node* next = current->link;
+    while(current != NULL){
+        current->link = prev;
+        prev = current;
+        current = next;
+        if(next != NULL){
+            next = next->link;
+        }
+    }
+    *head = prev;
 }
+
 void printList(node* head) {
     while (head != NULL) {
         printf("%d -> ", head->data);

@@ -1,0 +1,5 @@
+** LL : 1(insert first) -> 2(insert last) -> 3(insert last) -> NULL**
+**Reversed LL: 3->2->1->NULL**
+**Copy and Paste below line to simulate the above input**
+
+1 1 2 2 2 3 7 8 7 0
