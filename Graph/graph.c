@@ -11,15 +11,18 @@ typedef struct Graph{
 graph* initGraph(int V);
 void printAdjMatrix(graph* g);
 int* graph_bfs(graph* g, int start);
+int* graph_dfs(graph* g, int start);
 
 int main(){
     int nodeCount=0,i,j;
     int* res = NULL;
+    int* res1 = NULL;
     graph* g = NULL;
     printf("Enter number of nodes: ");
     scanf("%d",&nodeCount);
     g = initGraph(nodeCount);
     res = (int*)calloc(nodeCount,sizeof(int));
+    res1 = (int*)calloc(nodeCount,sizeof(int));
     for(i=0;i< (g->v);i++){
         for(j=0;j<=i;j++){
             if( i != j ){
@@ -42,6 +45,12 @@ int main(){
     res = graph_bfs(g,1);
     for(i=0;i<nodeCount;i++){
         printf("%d ",res[i]+1);
+    }
+    printf("\n --- DFS Traversal --- \n  ");
+    res1 = graph_dfs(g,1);
+    
+    for(i=0;i<nodeCount;i++){
+        printf("%d ",res1[i]+1);
     }
     printf("\n");
     return 0;
@@ -81,6 +90,29 @@ int* graph_bfs(graph* g, int start){
                 visited[i] = 1;
                 enqueue(q,i);
                 // q[rear++] = i;
+            }
+        }
+    }
+    return res;
+}
+
+int* graph_dfs(graph* g, int start){
+    int* res = NULL;
+    int* visited = NULL;
+    int vert = g->v, i, j=0, temp;
+    int stack[100];
+    int top = -1;
+    visited = (int*)calloc(vert,sizeof(int));
+    res = (int*)calloc(vert,sizeof(int));
+    visited[start-1] = 1;
+    stack[++top] = start-1;
+    while( top != -1 ){
+        temp = stack[top--];
+        res[j++] = temp;
+        for( i=0; i < vert; i++){
+            if( g->arr[temp][i] == 1 && !visited[i] ){
+                visited[i] = 1;
+                stack[++top] = i;
             }
         }
     }
