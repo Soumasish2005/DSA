@@ -8,7 +8,7 @@ typedef struct node{
 
 // Defining linked list operations
 
-node* init(int size);
+// node* initList(int size);
 void insertFirst(node** head, int data);
 void insertLast(node** head, int data);
 void insertAt(node** head, int data, int position);
