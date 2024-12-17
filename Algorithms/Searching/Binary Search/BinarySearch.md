@@ -10,7 +10,7 @@ To implement Binary Search, the following conditions must be satisfied:
 
 1. **Sorted Array**: The array must be sorted in ascending or descending order.
 2. **Search Space**: A well-defined search space (array or list) is required.
-3. **Comparable Elements**: Elements should be comparable for determining the middle value.
+3. **Mid Value**: Middle value should be directly accessible.
 
 ---
 
@@ -18,8 +18,8 @@ To implement Binary Search, the following conditions must be satisfied:
 1. Find the **middle element** of the sorted array.
 2. Compare the **middle element** with the target value:
    - If it matches, return the index of the element.
-   - If the target is smaller, search the **left half** of the array.
-   - If the target is larger, search the **right half** of the array.
+   - If the target is smaller, search the **left half** of the array in the same manner.
+   - If the target is larger, search the **right half** of the array in the same manner.
 3. Repeat the process until the target value is found or the search range becomes empty.
 
 ---
