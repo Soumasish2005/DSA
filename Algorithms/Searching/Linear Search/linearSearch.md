@@ -19,6 +19,12 @@ LinearSearch(arr, target):
 
 ---
 
+## Implementation
+   [View Linear Search Implementation](./linearSearch.c)
+
+
+---
+
 ## Time Complexity
 | **Case**       | **Time Complexity** |
 |----------------|---------------------|
@@ -84,13 +90,6 @@ Linear Search is optimal in the following scenarios:
 | **Best for**             | Small or Unsorted Data        |
 | **Preprocessing Needed** | No                           |
 | **Data Structures**      | Arrays, Lists, Sequential DS |
-
----
-
-## Example
-### Code Example:
-[View Linear Search Implementation](./linearSearch.c)
-
 
 ---
 
