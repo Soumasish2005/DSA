@@ -89,7 +89,7 @@ Linear Search is optimal in the following scenarios:
 
 ## Example
 ### Code Example:
-[View Linear Search Implementation](./linearSearch)
+[View Linear Search Implementation](./linearSearch.c)
 
 
 ---
