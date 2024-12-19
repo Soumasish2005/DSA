@@ -5,27 +5,9 @@ Insertion Sort is a simple and intuitive sorting algorithm. It builds the sorted
 
 ---
 
-## Algorithm
-```text
-function insertion_sort(arr):
-    for i in range(1, len(arr)):
-        key = arr[i]
-        j = i - 1
+## Algorithm Statistics
 
-        # Move elements of arr[0..i-1], that are greater than key,
-        # to one position ahead of their current position
-        while j >= 0 and key < arr[j]:
-            arr[j + 1] = arr[j]
-            j -= 1
-        arr[j + 1] = key
-
-    return arr
-
-```
-
----
-
-## Time Complexity
+### Time Complexity
 
 | Case        | Time Complexity |
 |-------------|-----------------|
@@ -36,8 +18,34 @@ function insertion_sort(arr):
 - **Best Case:** When the input array is already sorted, only one comparison per element is needed.
 - **Worst Case:** When the input array is sorted in reverse order, the maximum number of comparisons and shifts occur.
 
-## Space Complexity
+### Space Complexity
 - **Auxiliary Space:** O(1) (in-place sorting)
+### **Stability**
+- **Stable**: Yes, it maintains the relative order of equal elements.
+
+---
+
+## Algorithm
+- **Input**: List of int (L)<L<sub>1</sub>,L<sub>2</sub>,L<sub>3</sub>,...,L<sub>n</sub>>
+- **Output**:  List of int (L')<L<sub>1</sub>',L<sub>2</sub>',L<sub>3</sub>',...,L<sub>n</sub>'> where L' is a permutation of L and L<sub>i</sub> <= L<sub>i+1</sub> ∀ i = 1,2,3,...,n-1.
+- **Steps/Pseudocode**:
+```text
+    FOR i in 2 to n:
+        key = arr[i]
+        j = i - 1
+        # Move elements of arr[0..i-1], that are greater than key, to one position ahead of their current position
+        WHILE (j >= 0 and key < arr[j])
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+    return arr
+```
+
+---
+
+## **Representation & Implementation**
+  - Visual Representation<br />![insertionSort](https://www.doabledanny.com/static/92b034385c440e08bc8551c97df0a2e3/2.gif)<br />
+  - [View insertion Sort implementation in C code](./insertionSort.c)
 
 ---
 
