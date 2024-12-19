@@ -36,7 +36,7 @@ Selection Sort is a comparison-based sorting algorithm. It divides the array int
 ---
 
 **Representation & Implementation**
-  - Visual Representation<br />![Visual Representation](https://markbowman.org/LCC/SortSelection.gif)<br />
+  - Visual Representation<br />![https://markbowman.org/LCC/SortSelection.gif](https://2.bp.blogspot.com/-BstD1kiDAJE/WCREElHbqhI/AAAAAAAAF2Q/smmmK2nntsIK-YKDuJeFxPi6mVYC2zyQQCLcB/s1600/selection%2Bsort%2Bblog%2Bjonarendra.gif)<br />
   - [View selection Sort implementation in C code](./SelectionSort.c)
 
 ---
