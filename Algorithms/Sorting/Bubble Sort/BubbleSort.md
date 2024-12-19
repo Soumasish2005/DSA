@@ -41,7 +41,7 @@ Bubble Sort is a simple comparison-based sorting algorithm. It repeatedly travel
 ---
 
 ## **Representation & Implementation**
-  - Visual Representation<br />![Visual Representation](https://i.pinimg.com/originals/92/b0/34/92b034385c440e08bc8551c97df0a2e3.gif)<br />
+  - Visual Representation<br />![https://i.pinimg.com/originals/92/b0/34/92b034385c440e08bc8551c97df0a2e3.gif](https://1.bp.blogspot.com/-Y5OjJt1kP1w/XrL6BpJ47hI/AAAAAAAABuw/2xuTKm5saeoHlC20on9xSIbDxQINTlMMwCLcBGAsYHQ/s1600/bubble-sort.gif)]<br />
   - [View bubble Sort implementation in C code](./BubbleSort.c)
 
 ---
