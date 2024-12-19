@@ -5,59 +5,80 @@ Merge Sort is a popular divide-and-conquer sorting algorithm that splits the inp
 
 ---
 
-## Characteristics
+## Algorithm Statistics
 - **Algorithm Type:** Divide and Conquer
-- **Best Case Time Complexity:** O(n log n)
-- **Average Case Time Complexity:** O(n log n)
-- **Worst Case Time Complexity:** O(n log n)
-- **Space Complexity:** O(n)
+- ### **Time Complexity**
+    | Case          | Complexity |
+    |---------------|------------|
+    | Best Case     | O(n logn)       |
+    | Average Case  | O(n logn)      |
+    | Worst Case    | O(n logn)      |
+- **Space Complexity:** O(n) ( NOT in-place algorithm )
 - **Stable:** Yes (preserves the order of equal elements)
 - **Recursive or Iterative:** Primarily implemented recursively
 
 ---
 
-## Steps of Merge Sort
-1. Divide the array into two halves until each subarray contains only one element.
-2. Recursively sort each half.
-3. Merge the sorted halves back together into a single sorted array.
+## **Algorithm**
+- **Input**: List of int (L)<L<sub>1</sub>,L<sub>2</sub>,L<sub>3</sub>,...,L<sub>n</sub>>
+- **Output**:  List of int (L')<L<sub>1</sub>',L<sub>2</sub>',L<sub>3</sub>',...,L<sub>n</sub>'> where L' is a permutation of L and L<sub>i</sub> <= L<sub>i+1</sub> ∀ i = 1,2,3,...,n-1.
+- **Steps**:
+
+    1. Divide the array into two halves until each subarray contains only one element.
+    2. Recursively sort each half.
+    3. Merge the sorted halves back together into a single sorted array.
+    
+- **Pseudocode**:
+```text
+MERGE_SORT(arr[], int Left, int Right):
+    #Declare mid variable and initialize it to 0
+    IF (Left < Right)
+        Mid = Floor( (Left + Right)/2 )
+        MERGE_SORT(arr[], Left, Mid)
+        MERGE_SORT(arr[],Mid+1,Right)
+    MERGE(arr[], Left, Mid, Right)
+
+MERGE(left, mid, right):
+    n1 = Mid - Left + 1
+    n2 = Right - Mid
+
+    Create leftArr[] array of size n1
+    Create right[] array of size n2
+
+    FOR i in 1 to n1
+        leftArr[i] = arr[left + i - 1]
+
+    FOR j in 1 to n2
+        rightArr[i] = arr[mid + i]
+
+    i=1,j=1,k=left
+
+    while ( i <= n1 AND j <= n2 )
+        if (leftArr[i] <= rightArr[j]
+            arr[k] = leftArr[i]
+            i = i+1
+        else:
+            arr[k] = rightArr[i]
+            j = j+1
+        k++
+    
+    while ( i <= n1 )
+        arr[k] = leftArr[i]
+        i = i + 1
+        k = k + 1
+
+    while ( j <= n2 )
+        arr[k] = rightArr[i]
+        j = j + 1
+        k = k + 1
+
+```
 
 ---
 
-## Pseudocode
-```
-MERGE_SORT(array):
-    if length of array <= 1:
-        return array
-    
-    mid = length of array // 2
-    left_half = array[0:mid]
-    right_half = array[mid:]
-
-    left_sorted = MERGE_SORT(left_half)
-    right_sorted = MERGE_SORT(right_half)
-
-    return MERGE(left_sorted, right_sorted)
-
-MERGE(left, right):
-    result = []
-    while left is not empty and right is not empty:
-        if left[0] <= right[0]:
-            append left[0] to result
-            remove left[0] from left
-        else:
-            append right[0] to result
-            remove right[0] from right
-
-    while left is not empty:
-        append left[0] to result
-        remove left[0] from left
-
-    while right is not empty:
-        append right[0] to result
-        remove right[0] from right
-
-    return result
-```
+## **Representation & Implementation**
+  - Visual Representation<br />![mergeSort](https://blog.javascripttoday.com/images/merge-sort.gif)<br />
+  - [View merge Sort implementation in C code](./MergeSort.c)
 
 ---
 
@@ -85,7 +106,3 @@ MERGE(left, right):
 4. **Parallel Processing:** Applications that can leverage parallelism benefit from the divide-and-conquer approach of Merge Sort.
 5. **Consistent Performance Needs:** Suitable when consistent performance is a priority, regardless of input distribution.
 
----
-
-## Implementation
-  [View mergeSort implementation](./MergeSort.c)
