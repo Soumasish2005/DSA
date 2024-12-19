@@ -5,17 +5,7 @@ Selection Sort is a comparison-based sorting algorithm. It divides the array int
 
 ---
 
-## Pseudocode
-```text
-SelectionSort(array):
-    for i = 0 to n-1:
-        min_index = i
-        for j = i+1 to n:
-            if array[j] < array[min_index]:
-                min_index = j
-        Swap(array[i], array[min_index])
-```
----
+
 
 ## Key Statistics
 
@@ -26,13 +16,30 @@ SelectionSort(array):
 | - Average Case          | O(n²)                            |
 | - Worst Case            | O(n²)                            |
 | **Space Complexity**     | O(1) (In-place sorting)          |
-| **Stability**            | No                               |
-| **Comparison Count**     | O(n²)                            |
-| **Swap Count**           | O(n)                             |
-| **Recursive**            | No                               |
+| **Stable**            | No                               |
 
 ---
 
+## Algorithm
+- **Input**: List of int (L)<L<sub>1</sub>,L<sub>2</sub>,L<sub>3</sub>,...,L<sub>n</sub>>
+- **Output**:  List of int (L')<L<sub>1</sub>',L<sub>2</sub>',L<sub>3</sub>',...,L<sub>n</sub>'> where L' is a permutation of L and L<sub>i</sub> <= L<sub>i+1</sub> ∀ i = 1,2,3,...,n-1.
+- **Steps/Pseudocode**:
+    ```text
+    for i = 1 to n-1:
+        min_index = i
+        for j = i+1 to n:
+            if (array[j] < array[min_index])
+                min_index = j
+        if ( i != min_index )
+            Swap(array[i], array[min_index])
+    ```
+---
+
+**Representation & Implementation**
+  - Visual Representation<br />![Visual Representation](https://markbowman.org/LCC/SortSelection.gif)<br />
+  - [View selection Sort implementation in C code](./SelectionSort.c)
+
+---
 ## Advantages
 1. Simple and easy to implement.
 2. Performs well on small datasets.
