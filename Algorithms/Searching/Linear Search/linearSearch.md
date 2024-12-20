@@ -1,46 +1,45 @@
-# Linear Search Algorithm - Statistics, Advantages, Disadvantages, and Use Cases
-
----
-
-## Introduction
+# Linear Search Algorithm
 **Linear Search** (or Sequential Search) is one of the simplest searching algorithms. It sequentially checks each element of a list or array until the target element is found or the entire structure is traversed.
 
 ---
 
-## Algorithm
-### Pseudocode
-```plaintext
-LinearSearch(arr, target):
-    for i = 0 to length(arr) - 1:
-        if arr[i] == target:
-            return i  // Index where target is found
-    return -1  // Target not found
-```
+## Algorithm Statistics
 
----
-
-## Implementation
-   [View Linear Search Implementation](./linearSearch.c)
-
-
----
-
-## Time Complexity
+### Time Complexity
 | **Case**       | **Time Complexity** |
 |----------------|---------------------|
 | Best Case      | O(1)                |
 | Average Case   | O(n)                |
 | Worst Case     | O(n)                |
 
-- **n**: Size of the input array.
 - **Best Case**: The element is found at the first position.
 - **Worst Case**: The element is at the last position or not in the array.
 
----
-
-## Space Complexity
+### Space Complexity
 - **O(1)** (Constant Space)
     - No additional data structures are used, and the algorithm operates in place.
+
+---
+
+## Algorithm
+- **Input**:
+   - A list of int L with n elements.
+   - Key: The value to be searched.
+- **Output**: The index where the value is found or an error message if element isn't found.
+- **Pseudocode**
+    ```text
+    LinearSearch(arr, target):
+        FOR ( i = 1 to n )
+            IF ( arr[i] == target )
+                return i  // Index where key is found
+        return -1  // Target not found
+    ```
+
+---
+
+## **Representation & Implementation**
+  - Visual Representation<br />![visual representation](https://i.pinimg.com/originals/06/67/62/066762731eaabd349b02a62d450909c5.gif)<br />
+  - [View Linear Search implementation in C code](./linearSearch.c)
 
 ---
 
