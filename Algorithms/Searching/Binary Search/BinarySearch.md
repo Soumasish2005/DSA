@@ -1,7 +1,23 @@
 # Binary Search Algorithm: Complete Overview
 
-## **Overview**
 **Binary Search** is a search algorithm used to efficiently locate a target value in a sorted array. It works by repeatedly dividing the search range in half until the target value is found or the range is empty.
+
+---
+
+## **Algorithm Statistics**
+
+### **Time Complexity**
+| Case          | Time Complexity |
+|---------------|-----------------|
+| Best Case     | O(1)            |
+| Average Case  | O(log n)        |
+| Worst Case    | O(log n)        |
+
+- **Explanation**: In each step, the size of the search space is reduced by half.
+
+### **Space Complexity**
+- **Iterative Approach**: O(1) (constant space)
+- **Recursive Approach**: O(log n) (stack space for recursion)
 
 ---
 
@@ -14,35 +30,38 @@ To implement Binary Search, the following conditions must be satisfied:
 
 ---
 
-## **Algorithm Steps**
-1. Find the **middle element** of the sorted array.
-2. Compare the **middle element** with the target value:
-   - If it matches, return the index of the element.
-   - If the target is smaller, search the **left half** of the array in the same manner.
-   - If the target is larger, search the **right half** of the array in the same manner.
-3. Repeat the process until the target value is found or the search range becomes empty.
-
+## **Algorithm**
+- **Input**:
+   - A list of int L with n elements.
+   - Key: The value to be searched.
+- **Output**: The index where the value is found or an error message if element isn't found.
+- **Steps**:
+   1. Find the **middle element** of the sorted array.
+   2. Compare the **middle element** with the target value:
+      - If it matches, return the index of the element.
+      - If the target is smaller, search the **left half** of the array in the same manner.
+      - If the target is larger, search the **right half** of the array in the same manner.
+   3. Repeat the process until the target value is found or the search range becomes empty.
+- **Pseudocode**:
+  ```text
+     function binarySearch(arr[], key)
+        start = 1, end = n, mid = ( start + end )/2
+        WHILE ( arr[mid] != key AND start < end )
+           IF ( arr[mid] < key )
+              start = mid + 1
+           ELSE
+              end = mid - 1
+           mid = ( start + end )/2
+        IF ( arr[mid] == key )
+           return mid
+        ELSE
+           return -1
+  ```
 ---
 
-## **Implementation**
-   [View Binary Search Implementation](./binarySearch.c)
-
----
-
-## **Time Complexity**
-| Case          | Time Complexity |
-|---------------|-----------------|
-| Best Case     | O(1)            |
-| Average Case  | O(log n)        |
-| Worst Case    | O(log n)        |
-
-- **Explanation**: In each step, the size of the search space is reduced by half.
-
----
-
-## **Space Complexity**
-- **Iterative Approach**: O(1) (constant space)
-- **Recursive Approach**: O(log n) (stack space for recursion)
+## **Representation & Implementation**
+  - Visual Representation<br />![visual representation](https://raw.githubusercontent.com/AlvaroIsrael/binary-search/main/src/assets/binary-search-small.gif)<br />
+  - [View Binary Search implementation in C code](./binarySearch.c)
 
 ---
 
