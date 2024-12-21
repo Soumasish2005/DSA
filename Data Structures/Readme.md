@@ -26,6 +26,8 @@ Data structures are the fundamental building blocks of computer programming. The
 
 ![ds classification](https://media.geeksforgeeks.org/wp-content/uploads/20220520182504/ClassificationofDataStructure-660x347.jpg)
 
+###### ( img credits: GFG)
+
 ---
 
 ### Linear Data Structures
