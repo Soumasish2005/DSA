@@ -5,7 +5,7 @@ Welcome to the Data Structures repository. This folder contains various data str
 ### Table of Contents
 
 1. [Introduction](#introduction)
-2. [Array](#array)
+2. [Classification of Data Structures](#classification-of-data-structures)
 3. [Linked List](#linked-list)
 4. [Stack](#stack)
 5. [Queue](#queue)
@@ -21,7 +21,7 @@ Data structures are the fundamental building blocks of computer programming. The
 
 ### Classification of Data Structures
 
-    - [ds classification](https://media.geeksforgeeks.org/wp-content/uploads/20220520182504/ClassificationofDataStructure-660x347.jpg)
+![ds classification](https://media.geeksforgeeks.org/wp-content/uploads/20220520182504/ClassificationofDataStructure-660x347.jpg)
 
 ### Array
 
