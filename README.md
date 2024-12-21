@@ -26,7 +26,7 @@ Data Structures and Algorithms are the building blocks of computer science. This
 To get started with this repository, clone it to your local machine using the following command:
 
 ```sh
-git clone https://github.com/yourusername/DSA.git
+git clone https://github.com/Th85534/DSA.git
 ```
 
 ---
