@@ -69,9 +69,13 @@ A **queue** is a linear data structure that follows the **First In, First Out (F
 ---
 
 ## Disadvantages
-1. Fixed size in array implementation.
-2. Overflow and underflow conditions in static implementations.
-3. Inefficient memory use in array implementation when the queue is partially full.
+### Linear Queue
+- Fixed-size queues waste memory if not fully utilized.
+- Can face "false overflow" issues when the rear reaches the end, leaving unused space at the front.
+
+### Circular Queue
+- Slightly more complex to implement due to wrapping logic.
+- Debugging and maintenance can be more challenging compared to a linear queue.
 
 ---
 
