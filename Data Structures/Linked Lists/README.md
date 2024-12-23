@@ -74,7 +74,7 @@ A linked list is a linear data structure where elements, called nodes, are conne
 
    - Circular linked list:
 
-     ![Circular Linked List](https://th.bing.com/th/id/R.f6e11ef242b3fb956cb1ebb0e8917daf?rik=qV7XfRPI%2btFC1w&riu=http%3a%2f%2fwww.btechsmartclass.com%2fdata_structures%2fds_images%2fCircular_Linked_List_Example.png&ehk=MeeU45UpPgBK3Uj6QDdhhCPD9JbnfBjO48NcVf0G3Rk%3d&risl=&pid=ImgRaw&r=0)     
+     ![Circular Linked List]([https://th.bing.com/th/id/R.f6e11ef242b3fb956cb1ebb0e8917daf?rik=qV7XfRPI%2btFC1w&riu=http%3a%2f%2fwww.btechsmartclass.com%2fdata_structures%2fds_images%2fCircular_Linked_List_Example.png&ehk=MeeU45UpPgBK3Uj6QDdhhCPD9JbnfBjO48NcVf0G3Rk%3d&risl=&pid=ImgRaw&r=0](https://static.javatpoint.com/ds/images/circular-singly-linked-list.png))     
 
 ---
 
