@@ -83,18 +83,19 @@ A graph is a non-linear data structure consisting of nodes (vertices) and edges,
 ---
 
 ## Implementation
-1. **Adjacency Matrix:**
+- **Adjacency Matrix:**
    - 2D array where `matrix[i][j]` indicates the presence or weight of an edge.
    - Space complexity: \(O(V^2)\).
 
-2. **Adjacency List:**
+- **Adjacency List:**
    - Array of lists where each list represents adjacent vertices.
    - Space complexity: \(O(V + E)\).
 
-3. **Edge List:**
+- **Edge List:**
    - List of all edges with their vertices and weights.
    - Space complexity: \(O(E)\).
 
+- [See implementation using C](./graph.c)
 ---
 
 ## Advantages
