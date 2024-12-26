@@ -96,6 +96,12 @@ A graph is a non-linear data structure consisting of nodes (vertices) and edges,
    - Space complexity: \(O(E)\).
 
 - [See implementation using C](./graph.c)
+- Visual representation of a graph
+     <p align="center">
+        <img src="https://th.bing.com/th/id/R.cbf8cc438ec01d1b39b8b24bb07d20aa?rik=VUD5%2bK0pWsAjhw&riu=http%3a%2f%2fr-exercises.com%2fwp-content%2fuploads%2f2017%2f10%2figraph-2.png&ehk=%2fuAM2iy8oQVTf4CSeRx%2bMvYHTItiK1PmYxYI3Mx1O0I%3d&risl=&pid=ImgRaw&r=0" alt="Image 1" style="width:45%; margin-right:5%;">
+        <img src="https://adacomputerscience.org/images/content/computer_science/data_structures_and_algorithms/pathfinding/figures/ada_cs_path_star_weighted_graph.png" alt="Image 2" style="width:45%;">
+     </p>
+
 ---
 
 ## Advantages
