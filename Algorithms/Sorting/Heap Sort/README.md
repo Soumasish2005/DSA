@@ -66,7 +66,8 @@ arr = [12, 11, 13, 5, 6, 7]
 heap_sort(arr)
 print("Sorted array:", arr)
 ```
-
+- Visualization:
+  ![heap_sort](https://gochronicles.com/content/images/2021/08/heap-sort.gif)
 ---
 
 ## Advantages
