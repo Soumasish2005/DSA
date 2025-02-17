@@ -17,7 +17,7 @@ Welcome to the Data Structures and Algorithms (DSA) repository. This repository 
 
 ### Introduction
 
-Data Structures and Algorithms are the building blocks of computer science. This repository aims to provide clear and concise implementations of various data structures and algorithms, along with explanations and examples.
+Data Structures and Algorithms are the building blocks of computer science. This repository aims to provide clear and concise understanding of various data structures and algorithms, along with explanations and examples.
 
 ---
 
