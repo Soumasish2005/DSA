@@ -63,6 +63,7 @@ Returns the number of elements in the stack.
 | Pop       | O(1)            |
 | Peek      | O(1)            |
 | isEmpty   | O(1)            |
+| isFull    | O(1)            |
 
 ## Summary
 A **stack** is an essential data structure with numerous applications in programming and real-world scenarios. Its simplicity and efficiency make it a foundational tool for solving a variety of computational problems.
